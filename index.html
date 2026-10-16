@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="light">
+<html lang="en" data-theme="dark">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -7,14 +7,14 @@
   <meta name="description" content="Mohamed Anas Mohaideen - Senior Software Engineer in Dubai. 4 years building fintech systems with Java, Spring Boot, Microservices, Kafka and Kubernetes (AKS).">
   <meta name="keywords" content="Senior Software Engineer, Java Developer, Spring Boot, Microservices, Kafka, Fintech, Payments, Dubai, UAE">
   <meta name="author" content="Mohamed Anas Mohaideen">
-  <meta name="theme-color" content="#f6f4ef">
+  <meta name="theme-color" content="#07090f">
   <meta property="og:title" content="Mohamed Anas Mohaideen | Senior Software Engineer">
   <meta property="og:description" content="Java & Spring Boot microservices for fintech: trading platforms, KYC/AML, payments and prepaid cards.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://portfolio-six-livid-17.vercel.app/">
+  <meta property="og:url" content="https://mohamedanas-one.vercel.app/">
   <meta property="og:site_name" content="Mohamed Anas Mohaideen">
   <meta name="twitter:card" content="summary">
-  <link rel="canonical" href="https://portfolio-six-livid-17.vercel.app/">
+  <link rel="canonical" href="https://mohamedanas-one.vercel.app/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b3df5'/%3E%3Cstop offset='1' stop-color='%2300a89c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='800' font-size='26' fill='white'%3EMA%3C/text%3E%3C/svg%3E">
 
   <!-- marks the page as JS-enabled before first paint, so hidden-until-animated states only apply when the animations will run -->
@@ -209,6 +209,8 @@
       animation: bob 6s ease-in-out infinite;
     }
     .float-badge img { width: 26px; height: 26px; }
+    /* black logos (Kafka) would vanish on the dark background */
+    :root[data-theme="dark"] img[src*="apachekafka"] { filter: invert(1) brightness(1.1); }
     @keyframes bob { 0%, 100% { margin-top: 0; } 50% { margin-top: -12px; } }
     .fb1 { top: 22%; right: 9%; } .fb2 { top: 53%; right: 3%; animation-delay: -1.5s; } .fb3 { bottom: 15%; right: 22%; animation-delay: -3s; } .fb4 { top: 15%; left: 55%; animation-delay: -4.5s; }
 
