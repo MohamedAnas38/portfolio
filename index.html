@@ -11,7 +11,10 @@
   <meta property="og:title" content="Mohamed Anas Mohaideen | Senior Software Engineer">
   <meta property="og:description" content="Java & Spring Boot microservices for fintech: trading platforms, KYC/AML, payments and prepaid cards.">
   <meta property="og:type" content="website">
-  <meta property="og:url" content="https://mohamedanas38.github.io/portfolio/">
+  <meta property="og:url" content="https://portfolio-six-livid-17.vercel.app/">
+  <meta property="og:site_name" content="Mohamed Anas Mohaideen">
+  <meta name="twitter:card" content="summary">
+  <link rel="canonical" href="https://portfolio-six-livid-17.vercel.app/">
   <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%235b3df5'/%3E%3Cstop offset='1' stop-color='%2300a89c'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='56%25' text-anchor='middle' dominant-baseline='middle' font-family='Arial' font-weight='800' font-size='26' fill='white'%3EMA%3C/text%3E%3C/svg%3E">
 
   <!-- marks the page as JS-enabled before first paint, so hidden-until-animated states only apply when the animations will run -->
@@ -335,7 +338,9 @@
     /* code annotations floating in the hero */
     .anno { z-index: -1; font-family: "JetBrains Mono", monospace; font-weight: 600; color: var(--violet); opacity: .32; font-size: 15px; white-space: nowrap; }
     .anno.big { font-size: 34px; opacity: .14; }
-    .an1 { top: 18%; left: 4%; } .an2 { bottom: 26%; left: 2%; } .an3 { top: 64%; left: 44%; } .an4 { top: 30%; left: 40%; } .an5 { bottom: 9%; left: 30%; }
+    /* kept to the empty right-hand side so they never sit behind the hero text */
+    .an1 { top: 40%; right: 13%; } .an2 { bottom: 4%; right: 4%; } .an3 { top: 29%; right: 26%; } .an4 { top: 64%; right: 9%; } .an5 { bottom: 25%; right: 30%; }
+    @media (max-width: 1280px) { .anno { display: none; } }
     .loader-log { margin-top: 12px; font-family: "JetBrains Mono", monospace; font-size: 12.5px; opacity: .65; min-height: 1.4em; }
 
     /* ================================================================ experience */
@@ -424,7 +429,7 @@
     /* ================================================================ hero name block */
     .hello { font-family: "JetBrains Mono", monospace; font-size: 15px; font-weight: 500; color: var(--text-2); margin: 28px 0 4px; }
     .hello-c { color: var(--cyan); }
-    .hero h1.name-title { font-size: clamp(56px, 14.5vw, 176px); line-height: .88; letter-spacing: -.062em; margin: 0 0 24px; }
+    .hero h1.name-title { font-size: clamp(56px, 13vw, 164px); line-height: .9; letter-spacing: -.035em; margin: 0 0 24px; }
     .name-title .word { padding-bottom: .14em; margin-bottom: -.14em; }
     .name-dot { color: var(--cyan); }
     .role-line { display: flex; flex-wrap: wrap; align-items: center; gap: 10px 16px; margin-bottom: 18px; }
